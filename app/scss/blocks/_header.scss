@@ -55,8 +55,10 @@
     border: 1px solid #fff;
     padding: 15px 0;
     text-transform: uppercase;
+    transition: .3s;
     &:hover {
-      background-color: rgba(#fff, 0.1);
+      background-color: rgba(#000, 0.5);
+      border-color: #000;
     }
   }
   .header__scroll-bottom {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   //= template/header.html
 
   <!-- Меню -->
   <nav class="menu">
-    <div class="container">              
+    <div class="container">
       <div class="menu__inner">
         <ul class="menu__list menu-list">
           <li class="menu-list__item menu-list__item_active"><a href="#">HOME</a></li>
@@ -36,8 +38,9 @@
           ABOUT
         </h2>
         <p class="about__text">
-          We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor. 
-          In our design process, we make sure to stay one step ahead of the latest trends, 
+          We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW"
+          factor.
+          In our design process, we make sure to stay one step ahead of the latest trends,
           never forgetting to abide by key web standards.
         </p>
       </div>
@@ -49,8 +52,8 @@
           </div>
           <h3 class="about-list__item-title">WEB</h3>
           <p class="about-list__item-text">
-            We tend to deliver unique and 
-            functional design, through 
+            We tend to deliver unique and
+            functional design, through
             innovation and creativity.
           </p>
         </div>
@@ -60,8 +63,8 @@
           </div>
           <h3 class="about-list__item-title">iOS AND ANDROID</h3>
           <p class="about-list__item-text">
-            We seek to bring new businesses and 
-            customers closer together through valuable 
+            We seek to bring new businesses and
+            customers closer together through valuable
             insights and proper targeting.
           </p>
         </div>
@@ -73,8 +76,8 @@
             MARKETING
           </h3>
           <p class="about-list__item-text">
-            We’ll help you establish the right goals 
-            and build the right paths. Success depends 
+            We’ll help you establish the right goals
+            and build the right paths. Success depends
             on setting the right intention.
           </p>
         </div>
@@ -85,9 +88,53 @@
   </section>
   <!-- О нас конец-->
 
+  <!-- Портфолио -->
+  <section class="portfolio">
+    <div class="container-big">
+      <div class="portfolio__inner">
+        <h2 class="portfolio__title title">PORTFOLIO</h2>
+        <div class="portfolio__works">
+          <ul class="portfolio__button portfolio-button">
+            <li class="portfolio__button-item portfolio__button-item_active"><a href="#">ALL</a></li>
+            <li class="portfolio__button-item"><a href="#">WEB</a></li>
+            <li class="portfolio__button-item"><a href="#">APPS</a></li>
+            <li class="portfolio__button-item"><a href="#">OTHER</a></li>
+          </ul>
+          <div class="portfolio__works-list">
+            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+
+            </div>
+            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+
+            </div>
+            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+
+            </div>
+            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+
+            </div>
+            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+
+            </div>
+            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+
+            </div>
+          </div>
+          <!-- /.portfolio__works-list -->
+        </div>
+        <!-- /.portfolio__works -->
+        <button class="portfolio__works-btn btn">READ MORE</button>
+      </div>
+      <!-- /.portfolio__inner -->
+    </div>
+    <!-- /.container-big -->
+  </section>
+  <!-- Портфолио конец -->
+
   //= template/footer.html
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
