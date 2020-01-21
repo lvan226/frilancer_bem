@@ -1,0 +1,32 @@
+.footer {
+  background-color: #3c3c3c;
+  // .footer__inner
+  &__inner {
+    padding: 50px 0;
+    text-align: center;
+  }
+  // .footer__logo
+  &__logo {
+    margin-bottom: 40px;
+  }
+  // .footer__menu
+  &__menu {
+    margin-bottom: 30px;
+  }
+  // .footer__menu-item
+  &__menu-item {
+    a {
+      padding: 5px 10px;
+      color: #a4a4a4;
+    }
+  }
+  // .footer__copy
+  &__copy {
+    color: #6c6c6c;
+  }
+  }
+  .container {
+  }
+  .logo {
+  }
+  
