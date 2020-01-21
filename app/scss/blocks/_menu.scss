@@ -1,0 +1,30 @@
+.menu {
+  border-bottom: 1px solid #f2f2f2;
+  // .menu__inner
+  &__inner {
+    padding: 20px 0 25px;
+    display: flex;
+    justify-content: center;
+  }
+  // .menu__list
+  &__list {
+    font-size: 15px;
+  }
+}
+.menu-list {
+  @include lato400;
+  // .menu-list__item
+  &__item {
+    a {
+      padding: 0 25px;
+      color: #3c3c3c;
+    }
+    // .menu-list__item_active
+    &_active {
+      a {
+        color: #ada074;
+      }
+    }
+  }
+}
+  

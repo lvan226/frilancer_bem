@@ -1,5 +1,8 @@
 .header {
   // .header__inner
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &__inner {
     height: 100vh;
     text-align: center;
@@ -55,6 +58,15 @@
     &:hover {
       background-color: rgba(#fff, 0.1);
     }
+  }
+  .header__scroll-bottom {
+    display: block;
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17px;
+    height: 10px;
   }
   }
   .logo {

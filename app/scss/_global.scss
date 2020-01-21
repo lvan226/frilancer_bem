@@ -9,25 +9,32 @@ html {
 
 body {
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.2;
   @include lato400;
 }
 img {
   max-width: 100%;
 }
-h1,h2,h3,h4 {
+h1,h2,h3,h4,p {
   margin: 0;
 }
 a{
   text-decoration: none;
   display: inline-block;
 }
-
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
 .wrapper {
 
 }
 .container {
-  max-width: 1170px;
+  max-width: 930px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -36,4 +43,21 @@ a{
   border: none;
   cursor: pointer;
   transition: .3s;
+}
+.title {
+  padding-bottom: 35px;
+  position: relative;
+  font-size: 34px;
+  line-height: 36px;
+  font-weight: 700;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 81px;
+    height: 1px;
+    background-color: #000;
+  }
 }
