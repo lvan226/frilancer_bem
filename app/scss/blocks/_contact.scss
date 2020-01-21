@@ -1,0 +1,113 @@
+.contact {
+  // .contact__inner
+  &__inner {
+    padding: 170px 0 100px;
+  }
+  // .contact__title
+  &__title {
+    margin-bottom: 200px;
+  }
+  // .contact__row
+  &__row {
+    display: flex;
+  }
+  // .contact__form
+  &__form {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 70px;
+  }
+  // .contact__form-body
+  &__form-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input,
+    textarea {
+      background-color: #f8f7f7;
+      border: none;
+      border-top: 1px solid black;
+      padding: 5px 12px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 70px;
+      min-height: 35px;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      height: 120px;
+      resize: none;
+    }
+    label {
+      font-size: 14px;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+
+  .form-body__line {
+    max-width: 175px;
+    width: 100%;
+    &:last-child {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__form-btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin: 40px -20px 0 auto;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  // .contact__info
+  &__info {
+    max-width: 260px;
+    padding-left: 5px;
+  }
+  // .contact__info-text
+  &__info-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  // .contact__info-name
+  &__info-name {
+    font-weight: 700;
+    margin-bottom: 23px;
+  }
+  // .contact__info-social
+  &__info-social {
+    margin-bottom: 15px;
+    a + a {
+      margin-left: 9px;
+    }
+  }
+  // .contact__info-email
+  &__info-email {
+    a {
+      font-weight: 700;
+      color: #000;
+    }
+  }
+  }
+  .container {
+  }
+  .title {
+  }
+  
