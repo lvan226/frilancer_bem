@@ -1,0 +1,27 @@
+.partners {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // .partners__title
+  &__inner {
+    padding: 100px 0;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 32px;
+    @include lato300;
+    margin-bottom: 80px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center;
+  }
+  // .partners__list
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  }
+  .container {
+  }
+  
