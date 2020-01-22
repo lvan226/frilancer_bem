@@ -29,4 +29,8 @@
   }
   .logo {
   }
-  
+  @media (max-width: 600px) {
+    .footer__inner {
+      padding: 30px 0;
+    }
+  }
