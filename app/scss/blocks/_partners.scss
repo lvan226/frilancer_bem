@@ -25,3 +25,21 @@
   .container {
   }
   
+@media (max-width: 600px) {
+  .partners__inner {
+    padding: 50px 0;
+  }
+  .partners__title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .partners__list {
+    flex-wrap: wrap;
+    text-align: center;
+    li {
+      width: 45%;
+      margin-top: 25px;
+    }
+  }
+}
