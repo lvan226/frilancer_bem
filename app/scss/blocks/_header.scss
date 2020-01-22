@@ -76,3 +76,48 @@
   .btn {
   }
   
+@media (max-width: 767px) {
+  .header__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .header__info {
+    padding-bottom: 25px;
+  }
+  .header__logo {
+    margin-bottom: 6vh;
+  }
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .header__inner {
+    padding: 3vh 0;
+  }
+  .header__logo {
+    max-width: 50%;
+  }
+  .header__button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    bottom: 12vh;
+  }
+  .header .header__scroll-bottom {
+    bottom: 7vh;
+  }
+}
+@media (max-width: 420px) {
+  .header__title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+  }
+  .header__info {
+    padding-bottom: 15px;
+  }
+  .header__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
