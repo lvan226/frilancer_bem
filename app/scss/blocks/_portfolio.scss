@@ -84,3 +84,30 @@
   .portfolio-button {
   }
   
+@media (max-width: 800px) {
+  .portfolio__works-item {
+    height: 250px;
+  }
+  .portfolio__button {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 550px) {
+  .portfolio__works-item {
+    max-width: 100%;
+  }
+  .portfolio__button {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .portfolio__button-item {
+    width: 40%;
+  }
+  .portfolio__button-item a {
+    font-size: 16px;
+  }
+  .portfolio__button {
+    margin-bottom: 30px;
+  }
+}

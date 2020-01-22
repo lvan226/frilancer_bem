@@ -63,3 +63,9 @@ li {
     background-color: #000;
   }
 }
+@media (max-width: 767px) {
+  .title {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
+}
