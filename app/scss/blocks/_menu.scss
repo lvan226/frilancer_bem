@@ -1,6 +1,16 @@
 .menu {
   border-bottom: 1px solid #f2f2f2;
+  background-color: #fff;
+  z-index: 30;
+  transition: .4s;
   // .menu__inner
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  &_active {
+    position: fixed;
+  }
   &__inner {
     padding: 20px 0 25px;
     display: flex;
@@ -18,7 +28,7 @@
   &__item {
     &:hover {
       a {
-        color: rgb(62, 1, 177);
+        color: #ada074;
       }
     }
     a {
@@ -50,6 +60,7 @@
     display: block;
     height: 2px;
     background-color: #000;
+    transition: .3s;
     &:nth-child(2) {
       top: 8px;
     }
@@ -57,11 +68,28 @@
       top: 16px;
     }
   }
+  &_active {
+    span {
+      &:first-child {
+        top: 9px;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        top: 9px;
+        transform: rotate(-45deg);
+      }
+      &:last-child{
+        top: 18px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
   .menu__inner {
     position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .menu-list {
     max-height: 0%;
@@ -72,7 +100,7 @@
     right: -15px;
     text-align: center;
     top: 100%;
-    background: dimgray;
+    background: rgb(0, 0, 0);
     z-index: 5;
     transition: .3s;
     padding-top: 0px;
@@ -80,6 +108,7 @@
       display: block;
       a {
         padding: 10px 15px;
+        color: #fff;
       }
     }
     &_active {

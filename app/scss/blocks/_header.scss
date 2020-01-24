@@ -2,16 +2,26 @@
   // .header__inner
   position: relative;
   overflow: hidden;
-  &__background {
+  &__overlay {
+    position: absolute;
+    z-index: -1;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(#000, 0.6)
+  }
+  &__background {
+    top: 0; 
     left: 0;
     width: 100%;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 125vh;
-    z-index: -1;
+    height: 155vh;
+    z-index: -2;
   }
   &__inner {
     height: 100vh;
@@ -63,7 +73,6 @@
     font-size: 16px;
     min-width: 185px;
     border: 1px solid #fff;
-    padding: 15px 0;
     text-transform: uppercase;
     transition: .3s;
     &:hover {
@@ -72,6 +81,8 @@
     }
     a {
       color: #fff;
+      padding: 15px 0;
+      display: block;
     }
   }
   .header__scroll-bottom {
@@ -111,9 +122,10 @@
     max-width: 50%;
   }
   .header__button {
-    padding-top: 8px;
-    padding-bottom: 8px;
     bottom: 12vh;
+    a {
+      padding: 8px 0;
+    }
   }
   .header .header__scroll-bottom {
     bottom: 7vh;
