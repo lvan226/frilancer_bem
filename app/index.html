@@ -12,7 +12,8 @@
 
 <body>
   <!-- Шапка сайта -->
-  <header class="header" style="background-image: url(img/header-bg.jpg);">
+  <header class="header">
+    <div class="header__background" style="background-image: url(img/header-bg.jpg);"></div>
     <div class="container">
       <div class="header__inner">
         <a href="" class="header__logo logo">
@@ -22,10 +23,10 @@
           <h1 class="header__title">Clear, smart, attractive design </h1>
           <span class="header__subtitle">for your app, logo, website</span>
         </div>
-        <button class="header__button btn">
-          Read more
-        </button>
-        <a href="" class="header__scroll-bottom">
+        <div class="header__button btn">
+          <a href="#about" class="anchor">Read more</a>
+        </div>
+        <a  href="#about" class="header__scroll-bottom anchor">
           <img src="img/arrow-down.png" alt="">
         </a>
       </div>
@@ -33,9 +34,8 @@
     </div>
   </header>
   <!-- Шапка сайта конец -->
-
   <!-- Меню -->
-  <nav class="menu">
+  <nav class="menu" id="menu">
     <div class="container">
       <div class="menu__inner">
         <div class="menu-burger menu-burger_active">
@@ -45,9 +45,9 @@
         </div>
         <ul class="menu__list menu-list">
           <li class="menu-list__item menu-list__item_active"><a href="#">HOME</a></li>
-          <li class="menu-list__item"><a href="#">ABOUT US</a></li>
-          <li class="menu-list__item"><a href="#">PORTFOLIO</a></li>
-          <li class="menu-list__item"><a href="#">CONTACT</a></li>
+          <li class="menu-list__item"><a class="anchor" href="#about">ABOUT US</a></li>
+          <li class="menu-list__item"><a class="anchor" href="#portfolio">PORTFOLIO</a></li>
+          <li class="menu-list__item"><a class="anchor" href="#contact">CONTACT</a></li>
         </ul>
       </div>
       <!-- /.menu__inner -->
@@ -55,9 +55,8 @@
     <!-- /.container -->
   </nav>
   <!-- Меню конец -->
-
   <!-- О нас -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__info">
         <h2 class="about__title title">
@@ -115,36 +114,44 @@
   <!-- О нас конец-->
 
   <!-- Портфолио -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container-big">
       <div class="portfolio__inner">
         <h2 class="portfolio__title title">PORTFOLIO</h2>
         <div class="portfolio__works">
           <ul class="portfolio__button portfolio-button">
-            <li class="portfolio__button-item portfolio__button-item_active"><a href="#">ALL</a></li>
-            <li class="portfolio__button-item"><a href="#">WEB</a></li>
-            <li class="portfolio__button-item"><a href="#">APPS</a></li>
-            <li class="portfolio__button-item"><a href="#">OTHER</a></li>
+            <li class="portfolio__button-item">
+              <button  data-filter="all">ALL</button>
+            </li>
+            <li class="portfolio__button-item">
+              <button data-filter=".category-web">WEB</button>
+            </li>
+            <li class="portfolio__button-item">
+              <button data-filter=".category-app">APPS</button>
+            </li>
+            <li class="portfolio__button-item">
+              <button data-filter=".category-other">OTHER</button>
+            </li>
           </ul>
-          <div class="portfolio__works-list">
-            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+          <div class="portfolio__works-list portfolio-mixer">
+            <a href="#" class="portfolio__works-item mix category-web" style="background-image: url(img/portfolio/designer.png);">
 
-            </div>
-            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+            </a>
+            <a href="#" class="portfolio__works-item mix category-other" style="background-image: url(img/portfolio/designer.png);">
 
-            </div>
-            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+            </a>
+            <a href="#" class="portfolio__works-item mix category-web" style="background-image: url(img/portfolio/smm-min.png);">
 
-            </div>
-            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+            </a>
+            <a href="#" class="portfolio__works-item mix category-other" style="background-image: url(img/portfolio/designer.png);">
 
-            </div>
-            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+            </a>
+            <a href="#" class="portfolio__works-item mix category-app" style="background-image: url(img/portfolio/designer.png);">
 
-            </div>
-            <div class="portfolio__works-item" style="background-image: url(img/portfolio/01.jpg);">
+            </a>
+            <a href="#" class="portfolio__works-item mix category-app" style="background-image: url(img/portfolio/designer.png);">
 
-            </div>
+            </a>
           </div>
           <!-- /.portfolio__works-list -->
         </div>
@@ -158,7 +165,7 @@
   <!-- Портфолио конец -->
 
   <!-- Партнеры -->
-  <section class="partners" style="background-image: url(img/partners/partner-bg.jpg);">
+  <section class="partners" id="partners" style="background-image: url(img/partners/partner-bg.jpg);">
     <div class="container">
       <div class="partners__inner">
         <h2 class="partners__title">Our partners</h2>
@@ -177,27 +184,30 @@
   <!-- Партнеры конец -->
 
   <!-- Контакты -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact__inner">
         <h2 class="contact__title title">CONTACT</h2>
         <div class="contact__row">
-          <form class="contact__form" action="">
+          <form class="contact__form" action="order-landing.php" method="POST">
             <div class="contact__form-body form-body">
               <div class="form-body__line">
-                <label for="">YOUR NAME</label>
-                <input name="userName" type="text">
+                <label for="userName">YOUR NAME</label>
+                <input id="userName" required name="userName" type="text">
               </div>
               <div class="form-body__line">
-                <label for="">YOUR E-MAIL</label>
-                <input name="userEmail" type="email">
+                <label for="userEmail">YOUR E-MAIL</label>
+                <input id="userEmail" required name="userEmail" type="email">
               </div>
               <div class="form-body__line">
-                <label for="">message</label>
-                <textarea name="userText" rows="10"></textarea>
+                <label for="userText">message</label>
+                <textarea id="userText" name="userText" rows="10"></textarea>
               </div>
             </div>
-            <button class="contact__form-btn">send</button>
+            <div class="contact__form-thanks">
+              Спасибо за заявку! Мы свяжемся с вами в ближайшее время.
+            </div>
+            <button type="submit" class="contact__form-btn">send</button>
           </form>
           <div class="contact__info">
             <p class="contact__info-text">
@@ -247,7 +257,7 @@
     <!-- /.container -->
   </footer>
   <!-- Подвал сайта конец -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>

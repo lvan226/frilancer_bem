@@ -110,7 +110,17 @@
   }
   .title {
   }
-  
+
+  .contact__form-thanks {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+
 @media (max-width: 800px) {
   .contact__form {
     margin-right: 0;
