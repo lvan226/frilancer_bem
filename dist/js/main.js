@@ -62,22 +62,26 @@ function ready() {
   let menu = document.getElementById('menu');
   let headerBlock = document.getElementById('header');
   
-  if (window.pageYOffset > headerBlock.offsetHeight - 20) {
+  if (window.pageYOffset > headerBlock.offsetHeight) {
     menu.classList.add('menu_active');
+    headerBlock.style.marginBottom = menu.offsetHeight + 'px';
   }
   else {
     menu.classList.remove('menu_active');
+    headerBlock.style.marginBottom = '0';
   }
 
   window.onscroll = ()=> {
     let scroll = window.pageYOffset;
-    if (window.pageYOffset > headerBlock.offsetHeight - 20) {
+    if (window.pageYOffset > headerBlock.offsetHeight) {
       menu.classList.add('menu_active');
+      headerBlock.style.marginBottom = menu.offsetHeight + 'px';
     }
     else {
       menu.classList.remove('menu_active');
+      headerBlock.style.marginBottom = '0';
     }
-    document.querySelector('.header__background').style.top = -scroll/4 + 'px';
+    document.querySelector('.header__background').style.top = -scroll/3 + 'px';
   }
   
 }
