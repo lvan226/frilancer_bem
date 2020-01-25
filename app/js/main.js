@@ -87,7 +87,7 @@ function ready() {
       menu.classList.remove('menu_active');
       headerBlock.style.marginBottom = '0';
     }
-    document.querySelector('.header__background').style.top = -scroll/3 + 'px';
+    document.querySelector('.header__background').style.top = -scroll/5 + 'px';
 
     for (var count = 0; count < arrMenu.length; count++) {
       if(arr[count].getBoundingClientRect().top <= 80) {

@@ -110,6 +110,17 @@
         padding: 10px 15px;
         color: #fff;
       }
+      &:hover {
+        a {
+          padding: 10px 15px;
+          color: #ada074;
+        }
+      }
+      &_active {
+        a {
+          color: #ada074;
+        }
+      }
     }
     &_active {
       padding-top: 20px;

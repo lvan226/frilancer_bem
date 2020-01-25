@@ -25,6 +25,7 @@
   }
   &__inner {
     height: 100vh;
+    min-height: 420px;
     text-align: center;
     padding: 8vh 0;
     color: #fff;
@@ -99,7 +100,7 @@
   }
   .btn {
   }
-  
+
 @media (max-width: 767px) {
   .header__title {
     font-size: 28px;
@@ -144,5 +145,23 @@
   .header__subtitle {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+@media (max-height: 420px) {
+  .header__logo {
+    margin-bottom: 5vh;
+  }
+  .header__inner {
+    padding: 4vh 0;
+  }
+  .header__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .header__info {
+    padding-bottom: 20px;
+  }
+  .header__background {
+    height: 250vh;
   }
 }

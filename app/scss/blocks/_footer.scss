@@ -18,6 +18,9 @@
     a {
       padding: 5px 10px;
       color: #a4a4a4;
+      &:hover {
+        color: #fff;
+      }
     }
   }
   // .footer__copy

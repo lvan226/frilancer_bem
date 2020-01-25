@@ -61,7 +61,13 @@ function ready() {
   
   let menu = document.getElementById('menu');
   let headerBlock = document.getElementById('header');
-  
+  let arr = [];
+  arr[0] = document.getElementById('header');
+  arr[1] = document.getElementById('about');
+  arr[2] = document.getElementById('portfolio');
+  arr[3] = document.getElementById('contact');
+  let arrMenu = document.querySelectorAll('.menu-list li');
+  console.log(arrMenu);
   if (window.pageYOffset > headerBlock.offsetHeight) {
     menu.classList.add('menu_active');
     headerBlock.style.marginBottom = menu.offsetHeight + 'px';
@@ -82,6 +88,15 @@ function ready() {
       headerBlock.style.marginBottom = '0';
     }
     document.querySelector('.header__background').style.top = -scroll/3 + 'px';
+
+    for (var count = 0; count < arrMenu.length; count++) {
+      if(arr[count].getBoundingClientRect().top <= 80) {
+        for (var j = 0; j < arrMenu.length; j++) {
+          arrMenu[j].classList.remove('menu-list__item_active');
+        }
+        arrMenu[count].classList.add('menu-list__item_active');
+      }
+    }
   }
   
 }
